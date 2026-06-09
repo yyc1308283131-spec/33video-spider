@@ -5,8 +5,8 @@ WORKDIR /app
 # Copy project files
 COPY . .
 
-# Expose port
+# Use PORT env var from Render (default 8000)
 EXPOSE 8000
 
-# Start PHP built-in server
-CMD ["php", "-S", "0.0.0.0:8000", "-t", "public"]
+# Start PHP built-in server on $PORT
+CMD php -S 0.0.0.0:\${PORT:-8000} -t public
