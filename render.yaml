@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: video-spider
-    env: php
-    plan: free
-    buildCommand: composer install --no-interaction --no-dev
-    startCommand: php -S 0.0.0.0:$PORT -t public
