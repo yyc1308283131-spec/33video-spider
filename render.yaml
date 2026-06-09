@@ -1,7 +1,6 @@
 services:
   - type: web
     name: video-spider
-    env: php
+    env: docker
     plan: free
-    buildCommand: echo "vendor already committed"
-    startCommand: php -S 0.0.0.0:$PORT -t public
+    dockerfilePath: ./Dockerfile
