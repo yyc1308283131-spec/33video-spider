@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: video-spider
+    env: php
+    plan: free
+    buildCommand: echo "vendor already committed"
+    startCommand: php -S 0.0.0.0:$PORT -t public
