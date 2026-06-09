@@ -32,7 +32,7 @@ class ComposerAutoloaderInitc50ea07b37cdd16c9c4f7e32467755b1
         call_user_func(\Composer\Autoload\ComposerStaticInitc50ea07b37cdd16c9c4f7e32467755b1::getInitializer($loader));
 
         $loader->register(true);
-        
+
         $includeFiles = \Composer\Autoload\ComposerStaticInitc50ea07b37cdd16c9c4f7e32467755b1::$files;
         foreach ($includeFiles as $fileIdentifier => $file) {
             \Composer\Autoload\ComposerStaticInitc50ea07b37cdd16c9c4f7e32467755b1::loadFiles($fileIdentifier, $file);
